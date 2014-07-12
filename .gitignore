@@ -1,41 +1,14 @@
-dist
-cabal-dev
-*.o
+dist*
+static/tmp/
+static/combined/
+config/client_session_key.aes
 *.hi
-*.chi
-*.chs.h
-.virtualenv
-.hsenv
-.cabal-sandbox/
+*.o
+*.sqlite3
+.hsenv*
+cabal-dev/
+yesod-devel/
+.cabal-sandbox
 cabal.sandbox.config
-cabal.config
-
-# -*- mode: gitignore; -*-
-*~
-\#*\#
-/.emacs.desktop
-/.emacs.desktop.lock
-*.elc
-auto-save-list
-tramp
-.\#*
-
-# Org-mode
-.org-id-locations
-*_archive
-
-# flymake-mode
-*_flymake.*
-
-# eshell files
-/eshell/history
-/eshell/lastdir
-
-# elpa packages
-/elpa/
-
-# reftex files
-*.rel
-
-# AUCTeX auto folder
-/auto/
+.DS_Store
+*.swp

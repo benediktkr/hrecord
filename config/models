@@ -1,0 +1,41 @@
+User
+    ident Text
+    password Text Maybe
+    UniqueUser ident
+    deriving Typeable
+Email
+    email Text
+    user UserId Maybe
+    verkey Text Maybe
+    UniqueEmail email
+LokUser
+    username Text
+    hashed_password Text
+    email Text Maybe
+    credit_isk Int
+    credit_btc Int
+    dl_left Int
+    sub_end Text
+    UniqueLokUser username
+    deriving Typeable
+Node
+    name Text
+    usercount Int
+    heartbeat Int
+    score Int Maybe
+    selfcheck Int
+    throughput Int Maybe
+    cpu Int
+    uptime Text
+    total_throughput Int Maybe
+    UniqueNode name
+    deriving Typeable
+ApiKey
+   node NodeId Maybe
+   key Text
+   name Text
+   status Text
+   UniqueApikey name
+   deriving Typeable
+
+ -- By default this file is used in Model.hs (which is imported by Foundation.hs)

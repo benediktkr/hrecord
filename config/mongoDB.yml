@@ -1,0 +1,24 @@
+Default: &defaults
+  user: hrecord
+  password: hrecord
+  host: localhost
+  database: hrecord
+  connections: 10
+
+Development:
+  <<: *defaults
+
+Testing:
+  database: hrecord_test
+  <<: *defaults
+
+Staging:
+  database: hrecord_staging
+  connections: 100
+  <<: *defaults
+
+Production:
+  database: hrecord_production
+  connections: 100
+  host: localhost
+  <<: *defaults
